@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/notebook_background"
+    tools:context="com.mbwatson.rookscore.ui.gameScreen.GameScreenActivity">
+
+    <ImageView
+        android:id="@+id/topBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/verticalBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView"
+        android:background="@drawable/line_horizontal"
+        android:layout_below="@+id/team_two" />
+
+    <TextView
+        android:id="@+id/team_one"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignTop="@+id/team_two"
+        android:layout_toStartOf="@+id/topBar"
+        android:fontFamily="casual"
+        android:text="@string/team_1"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/verticalBar" />
+
+    <TextView
+        android:id="@+id/team_two"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/imageView"
+        android:layout_toEndOf="@+id/topBar"
+        android:fontFamily="casual"
+        android:text="@string/team_2"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:adjustViewBounds="false"
+        app:srcCompat="@drawable/rookbook" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/verticalBar"
+        android:id="@+id/coordinatorLayout">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            app:fabSize="normal"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/game_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="367dp"
+            android:layout_below="@+id/verticalBar" />
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

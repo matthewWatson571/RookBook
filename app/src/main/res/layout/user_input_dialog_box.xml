@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_dialog_layout_design_user_input"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/middleDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Who Took The Middle?"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/middleDialogInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/trumpsDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What color is Trumps?"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/trumpsDialogInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/trumps_spinner"/>
+    <TextView
+        android:id="@+id/dialogBidAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bid Amount"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/bidInputDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bid Amount"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/dialogSettingScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Setting Team Score"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/userInputDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Setting Team Score"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/dialogRook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Who had the Rook?" />
+
+    <Spinner
+        android:id="@+id/rookDialogInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
